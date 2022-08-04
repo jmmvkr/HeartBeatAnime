@@ -6,11 +6,12 @@ https://github.com/jmmvkr/HeartBeatAnime/tree/main/HeartBeatAnime/demo
 
 # Pseudo Code for Arduino Application
 ```
-int MAX_TIMELINE;
-int MAX_FRAME;
+// sample animation frames: int arr[] = { 70, 192, 255, 240, 235, 215, 195, 175, 155, 135, 115, 95, 75 };
+const int MAX_TIMELINE = 30;
+const int MAX_FRAME = 10;
+int iFrame = 0;
 int arrFrame[];
 int heartOnOff;
-int iFrame;
 
 showHeartLight()
 {
